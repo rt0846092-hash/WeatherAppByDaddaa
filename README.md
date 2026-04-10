@@ -27,9 +27,6 @@ A responsive weather application built using React that provides real-time weath
 
 ## 📸 Screenshots
 
-➡️ Add your screenshots here
-Example:
-
 ```md
 ![Weather-App Screenshot](screenshot.png)
 ```
