@@ -66,7 +66,7 @@ npm start
 
 1. Get your API key from https://openweathermap.org/api
 2. Create a `.env` file in the root folder
-3. Add your API key like this:
+3. Add  API key like this:
 
 ```env
 REACT_APP_API_KEY=your_api_key_here
