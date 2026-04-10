@@ -1,25 +1,5 @@
-/* ===========================================
-   App.css
-   Component styles for Weather App
-   Sections:
-     1.  Page layout
-     2.  Entry animation
-     3.  Header
-     4.  Search form
-     5.  Loading state
-     6.  Error state
-     7.  Current weather card
-     8.  Weather detail row
-     9.  5-day forecast
-     10. Responsive — Tablet  (≥600px)
-     11. Responsive — Desktop (≥1024px)
-     12. Responsive — Wide    (≥1280px)
-   =========================================== */
 
 
-/* -------------------------------------------
-   1. Page layout
-------------------------------------------- */
 .App {
   min-height:     100vh;
   padding:        var(--space-6) var(--space-4);
@@ -488,6 +468,8 @@
 
   .forcast-cards {
     gap: var(--space-3);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .forcast-card {
@@ -606,3 +588,4 @@
     font-size: 2rem;
   }
 }
+
