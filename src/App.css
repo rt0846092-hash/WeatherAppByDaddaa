@@ -407,88 +407,93 @@
   white-space: nowrap;
 }
 
-
 /* -------------------------------------------
-   10. Responsive — Tablet (≥600px)
+   Mobile — Small devices (≤480px)
 ------------------------------------------- */
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+
   .App {
-    padding: var(--space-10) var(--space-8);
+    padding: var(--space-4) var(--space-2);
   }
 
   .container {
-    max-width: 580px;
-    gap:       var(--space-5);
+    max-width: 100%;
+    gap: var(--space-3);
   }
 
   .head {
-    padding: var(--space-5) var(--space-8);
+    padding: var(--space-3) var(--space-4);
   }
 
   .head h1 {
-    font-size: 1.45rem;
+    font-size: 1rem;
   }
 
   .unitChangeBtn {
-    font-size: 0.84rem;
-    padding:   var(--space-2) var(--space-4);
+    font-size: 0.7rem;
+    padding: var(--space-1) var(--space-2);
   }
 
-  .search-input {
-    font-size: 0.95rem;
-    padding:   var(--space-3) var(--space-5);
+  .InputForm {
+    flex-direction: column;
   }
 
   .citySearch {
-    font-size: 0.92rem;
-    padding:   var(--space-3) var(--space-6);
+    width: 100%;
   }
 
   .weatherSection {
-    padding: var(--space-8) var(--space-8) var(--space-6);
+    padding: var(--space-6) var(--space-4);
   }
 
   .weatherSection img {
-    width:  100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
-  .discriotion {
-    gap: var(--space-3);
+  .weatherSection > p:nth-of-type(2) {
+    font-size: 2.5rem;
   }
 
-  .discriotion p {
-    font-size: 0.84rem;
-    padding:   var(--space-2) var(--space-2);
-  }
-
-  .forcast {
-    padding: var(--space-6) var(--space-8);
+  .weather-cards {
+    grid-template-columns: 1fr;
   }
 
   .forcast-cards {
-    gap: var(--space-3);
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .forcast-card {
-    padding: var(--space-3) var(--space-2);
-  }
-
-  .forcast-card img {
-    width:  50px;
-    height: 50px;
-  }
-
-  .forcast-card p:first-child { font-size: 0.70rem; }
-  .forcast-card p:last-child  { font-size: 0.72rem; }
 }
-
-
-/* -------------------------------------------
-   11. Responsive — Desktop (≥1024px)
+ /* -------------------------------------------
+   Tablet — Medium devices (≤780px)
 ------------------------------------------- */
+@media (max-width: 780px) {
+
+  .container {
+    max-width: 600px;
+  }
+
+  .InputForm {
+    flex-direction: row;
+  }
+
+  .weather-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .forcast-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .weatherSection img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .weatherSection > p:nth-of-type(2) {
+    font-size: 3rem;
+  }
+}
+ 
 @media (min-width: 1024px) {
   .App {
     padding:         var(--space-12) var(--space-8);
