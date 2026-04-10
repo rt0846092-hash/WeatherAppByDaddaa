@@ -1,3 +1,6 @@
+# WeatherAppByDaddaa
+A modern React weather app that shows real-time weather, city-based local time, and 5-day forecasts using the OpenWeather API.
+
 # 🌦️ Weather App
 
 A responsive weather application built using React that provides real-time weather updates for any city.
@@ -110,3 +113,5 @@ Contributions are welcome! Feel free to fork and submit a pull request.
 ---
 
 ⭐ Don’t forget to star the repo!
+
+
